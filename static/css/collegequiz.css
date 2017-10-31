@@ -1,0 +1,47 @@
+body{
+	background-color:#fcfdff;
+}
+
+table {
+	text-align:center;
+}
+
+#questions{
+	margin: 0 auto;
+	width: 80%;
+}
+
+#rec,#rec2,#rec3{
+	margin: 0 auto;
+	width: 60%;
+}
+
+#rev{
+	display:none;
+}
+
+#q2,#q3,#q4,#q5,#rec,#rec2,#rec3{
+	display:none;
+}
+
+.what{
+	border-radius:50px;
+	border:0px;
+}
+
+img{
+	width:400px;
+	height:400px;
+}
+	
+h1{
+	font-family:Impact;
+}
+
+p{
+	font-weight:bold;
+}
+
+div{
+	text-align:center;
+}

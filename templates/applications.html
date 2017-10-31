@@ -1,0 +1,190 @@
+{% extends "layout.html" %}
+{% set active_page ="app" %}
+{% block title %}Applications{% endblock %}
+{% block jscss %}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/applications.css')}}">
+    <script src="{{url_for('static',filename='javascript/applications.js')}}"></script>
+{% endblock %}
+
+{% block content %}
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="logo-section container">
+      <img id="uc-logo" class="application-logo" src="{{url_for('static',filename='Images/UC_Logo.png')}}" alt="University of California">
+      <img id="commonapp-logo" class="application-logo" src="{{url_for('static',filename='Images/CommonApp_Logo.png')}}" alt="Common App">
+    </div>
+  </div>
+
+  <table id="description-table" class="table table-bordered">
+    <thead>
+      <tr>
+        <th>What is the UC application?</th>
+        <th>
+          What is the Common Application?
+        </th>
+        <th class="button-th center">
+            <button type="button" class="table-hide btn btn-default btn-sm" data-table-for="description-table">
+                <span class="glyphicon glyphicon-minus-sign"></span> Hide
+            </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          From all backgrounds, ethnicities and incomes, UC attracts the best and brightest. UC undergraduates come from all over California, and they work hard to make it to college. In fact, over 40 percent of UC students come from low-income families. UC's faculty
+          are the drivers behind innovations in biotechnology, computer science, art and architecture — and they bring that knowledge, that greatness, directly to the classroom. Thousands of California jobs, billions of dollars in revenues, and countless
+          everyday household items — from more plentiful fruits and vegetables to compact fluorescent light bulbs — can be traced back to UC discoveries. Similarly, many of the state’s leading businesses are based on UC technology, founded by our faculty
+          or led by UC graduates.
+        </td>
+        <td>
+          The Common Application (informally known as the Common App) is an undergraduate college admission application that applicants may use to apply to any of 731 member colleges and universities in 48 states and the District of Columbia, as well as in Canada,
+          China, and many European countries. Member colleges and universities that accept the Common App are made up of over 100 public universities, nine Historically Black Colleges and Universities, and over 250 institutions that do not require
+          an application fee. It is managed by the staff of a not-for-profit membership association (The Common Application, Inc.) and governed by a 13-member volunteer Board of Directors drawn from the ranks of college admission deans and secondary school
+          college guidance counselors. Its mission is to promote access, equity, and integrity in the college admission process, which includes subjective factors gleaned from essays and recommendations alongside more objective criteria such as class
+          rank and standardized testing.
+        </td>
+        <td class="hidden"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table id="essay-table" class="table table-bordered">
+    <thead>
+      <tr>
+        <th>UC Essays</th>
+        <th>
+          Common Application Essays
+        </th>
+        <th class="button-th center">
+          <button type="button" class="table-hide btn btn-default btn-sm" data-table-for="essay-table">
+              <span class="glyphicon glyphicon-minus-sign"></span> Hide
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <p>
+            The UC application does not have essays, they have personal insight questions. The personal insight questions are about getting to know you better — your life experience, interests, ambitions and inspirations. For each question you can respond with a maximum
+            of 350 words. Think of it as your interview with the admissions office. Be open. Be reflective. Find your individual voice and express it. While this section of the application is just one part UC considers when making its admission decision, it helps provide
+            context for the rest of your application. When submitting your application you only include 4 of the 8 prompts they offer, chose and answer the for that apply most to you.
+          </p>
+          <p>
+            1.) Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.
+          </p>
+          <p>
+            2.) Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.
+          </p>
+          <p>
+            3.) What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?
+          </p>
+          <p>
+            4.) Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.
+          </p>
+          <p>
+            5.) Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?
+          </p>
+          <p>
+            6.) Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.
+          </p>
+          <p>
+            7.) What have you done to make your school or your community a better place?
+          </p>
+          <p>
+            8.) Beyond what has already been shared in your application, what do you believe makes you stand out as a strong candidate for admissions to the University of California?
+          </p>
+        </td>
+        <td>
+          <p>
+            The essay demonstrates your ability to write clearly and concisely on a selected topic and helps you distinguish yourself in your own voice. What do you want the readers
+            of your application to know about you apart from courses, grades, and test scores? Choose the option that best helps you answer that question and write an essay of no more
+            than 650 words, using the prompt to inspire and structure your response. Remember: 650 words is your limit, not your goal. Use the full range if you need it, but don't feel
+            obligated to do so. Select one of the following prompts to write about.
+          </p>
+          <p>
+            1. Some students have a background, identity, interest, or talent that is so meaningful they believe their application would be incomplete without it. If this sounds like you, then please share your story.
+          </p>
+          <p>
+            2. The lessons we take from obstacles we encounter can be fundamental to later success. Recount a time when you faced a challenge, setback, or failure. How did it affect you, and what did you learn from the experience?
+          </p>
+          <p>
+            3. Reflect on a time when you questioned or challenged a belief or idea. What prompted your thinking? What was the outcome?
+          </p>
+          <p>
+            4. Describe a problem you've solved or a problem you'd like to solve. It can be an intellectual challenge, a research query, an ethical dilemma - anything that is of personal importance, no matter the scale. Explain its significance to you and what steps you took or could be taken to identify a solution.
+          </p>
+          <p>
+            5. Discuss an accomplishment, event, or realization that sparked a period of personal growth and a new understanding of yourself or others.
+          </p>
+          <p>
+            6. Describe a topic, idea, or concept you find so engaging that it makes you lose all track of time. Why does it captivate you? What or who do you turn to when you want to learn more?
+          </p>
+          <p>
+            7. Share an essay on any topic of your choice. It can be one you've already written, one that responds to a different prompt, or one of your own design.
+          </p>
+        </td>
+        <td class="hidden"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table id="components-table" class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Other components of the UC application</th>
+        <th>
+          Other components of the Common Application
+        </th>
+        <th class="button-th center">
+          <button type="button" class="table-hide btn btn-default btn-sm" data-table-for="components-table">
+              <span class="glyphicon glyphicon-minus-sign"></span> Hide
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          In addition to the personal insight questions you will be required to fill in information regarding your family/parents, academic history, activities/awards, and test scores.
+        </td>
+        <td>
+          You’ll be asked to list your high school grades and courses, along with your activities, entrance exam scores and exam dates, and parent or legal guardian information.
+        </td>
+        <td class="hidden"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table id="more-info-table" class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Where to find more info about the UC application</th>
+        <th>
+          Where to find more info about the Common Application
+        </th>
+        <th class="button-th center">
+          <button type="button" class="table-hide btn btn-default btn-sm" data-table-for="more-info-table">
+              <span class="glyphicon glyphicon-minus-sign"></span> Hide
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          For more information about the UC application, visit
+          <a href="https://admissions.universityofcalifornia.edu/applicant/login.htm">universityofcalifornia.edu</a>
+        </td>
+        <td>
+          For more information about the Common Application, visit
+          <a href="http://www.commonapp.org/">commonapp.org</a>
+        </td>
+        <td class="hidden"></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+{% endblock %}

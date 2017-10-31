@@ -1,0 +1,37 @@
+.navbar {
+  margin-bottom:;
+}
+
+.logo-section {
+  width: 100%;
+}
+
+img {
+	width: 100%;
+	height:auto;
+}
+
+.table {
+  width: 75%;
+  margin: auto;
+}
+
+.container {
+  padding-bottom: 40px;
+}
+
+.carousel-caption {
+	background: rgba(0, 0, 0, .4)
+}
+
+td {
+  width: 50%;
+}
+
+th {
+	align: "center";
+}
+
+body {
+  padding-bottom: 30px;
+}

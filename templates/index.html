@@ -4,11 +4,12 @@
     </head>
     <body>
         <form action=".">
-          <select name="states">
-            {{ response }}
+          <select name="State">
+            {{ response_options }}
           </select>
           <br><br>
           <input type="submit">
       </form>
+      <p> This state has a population of {{ response_population }} </p>
     </body>
 </html>

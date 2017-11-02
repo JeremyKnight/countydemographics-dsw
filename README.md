@@ -1,3 +1,3 @@
-# college-guide
+# County Demographics
 
-https://jaredfitton.github.io/college-guide/html/index.html
+https://github.com/jaredfitton/countydemographics-dsw
